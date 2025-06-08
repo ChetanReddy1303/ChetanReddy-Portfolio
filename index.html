@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chetan Reddy Sangam - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pacifico&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "Q6tHsr7UzEAtwzso2",
+        });
+      })();
+    </script>
+    <script src="email.js"></script>
+    
+  </head>
+  <body>
+    <!-- Loading Spinner -->
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Hamburger button for small screens -->
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <!-- Sidenav for small screens -->
+    <div class="sidenav" id="sidenav">
+      <button class="close-btn" id="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="sidenav-header">Chetan Reddy Sangam</div>
+      <div class="sidenav-links">
+        <a href="#Home" class="sidenav-link">Home</a>
+        <a href="#About" class="sidenav-link">About</a>
+        <a href="#Skills" class="sidenav-link">Skills</a>
+        <a href="#Projects" class="sidenav-link">Projects</a>
+        <a href="#Contact" class="sidenav-link">Contact</a>
+        <div class="sidenav-resume">
+          <span class="resume-toggle">Resume</span>
+          <div class="resume-dropdown">
+            <a href="resume.pdf" target="_blank" class="resume-option">View Resume</a>
+            <a href="resume.pdf" download class="resume-option">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Original navbar (unchanged for desktop) -->
+    <ul>
+      <div class="left-nav">
+        <li class="header-secondary">Chetan Reddy Sangam</li>
+      </div>
+      <div class="center-nav">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </div>
+      <div class="right-nav">
+        <li class="resume-menu">
+          <span class="resume-toggle">Resume</span>
+          <div class="resume-dropdown">
+            <a href="resume.pdf" target="_blank" class="resume-option">View Resume</a>
+            <a href="resume.pdf" download class="resume-option">Download Resume</a>
+          </div>
+        </li>
+      </div>
+    </ul>
+    <div class="main-content">
+      <section id="Home">
+        <div class="container">
+          <h1 class="header-primary typing">HeLLo!! I'm Chetan Reddy Sangam</h1>
+          <h1 class="header-secondary">
+            Full Stack Developer Crafting Scalable Web Solutions
+          </h1>
+          <div class="social-links">
+            <a
+              href="https://github.com/ChetanReddy1303"
+              target="_blank"
+              class="github"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/chetanreddysangam/"
+              target="_blank"
+              class="linkedin"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://x.com/ChetanReddy8895"
+              target="_blank"
+              class="twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="mailto:chetanreddy1303@gmail.com" class="email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="About" class="about-section">
+        <div class="about-container">
+          <h2 class="header-primary">About Me</h2>
+          <p class="about-para">
+            Passionate about building impactful web applications, I’m a Computer Science student at GVPCE with a strong focus on full-stack development. I specialize in creating scalable, user-centric solutions using modern technologies like React, Spring Boot, and Node.js, as demonstrated in my projects such as Alumni Connect and ZomatoClone. I’m eager to apply my skills in a professional setting, where I can contribute to meaningful projects and grow alongside industry experts. Driven by challenges, I thrive in dynamic environments, consistently delivering high-quality, maintainable code under tight deadlines. My ability to quickly adapt to new tools and frameworks, combined with a strong foundation in problem-solving, allows me to tackle complex technical challenges with confidence. With a fresh perspective, a collaborative spirit, and a relentless commitment to excellence, I’m ready to make a positive impact on your team and help drive innovation.
+          </p>
+        </div>
+      </section>
+      <section id="Skills">
+        <div class="skills-container">
+          <h2 class="header-primary">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Languages</h3>
+              <div class="skill-list">
+                <span class="skill-item">Java</span>
+                <span class="skill-item">Python</span>
+                <span class="skill-item">C</span>
+                <span class="skill-item">C++</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Databases</h3>
+              <div class="skill-list">
+                <span class="skill-item">MySQL</span>
+                <span class="skill-item">PostgreSQL</span>
+                <span class="skill-item">Oracle</span>
+                <span class="skill-item">SQL Server</span>
+                <span class="skill-item">MongoDB</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Development</h3>
+              <div class="skill-list">
+                <span class="skill-item">SpringBoot</span>
+                <span class="skill-item">Angular</span>
+                <span class="skill-item">React</span>
+                <span class="skill-item">HTML</span>
+                <span class="skill-item">CSS</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">Bootstrap</span>
+                <span class="skill-item">Spring</span>
+                <span class="skill-item">Node.js</span>
+                <span class="skill-item">Express.js</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Tools</h3>
+              <div class="skill-list">
+                <span class="skill-item">VSCode</span>
+                <span class="skill-item">Eclipse</span>
+                <span class="skill-item">IntelliJ IDEA</span>
+                <span class="skill-item">GitHub</span>
+                <span class="skill-item">Postman</span>
+                <span class="skill-item">STS</span>
+                <span class="skill-item">Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Projects">
+        <div class="projects-container">
+          <h2 class="header-primary">Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">Placeholder Image</div>
+              <h3>Alumni Connect</h3>
+              <p>
+                A full-stack MERN application to connect students with alumni
+                for mentorship, career guidance, and opportunity sharing.
+                Features secure authentication, role-based access, and scalable
+                design.
+              </p>
+              <div class="project-tech">
+                <span class="skill-item"
+                  ><i class="fab fa-react"></i> React.js</span
+                >
+                <span class="skill-item"
+                  ><i class="fab fa-css3-alt"></i> Tailwind CSS</span
+                >
+                <span class="skill-item"
+                  ><i class="fab fa-node-js"></i> Node.js</span
+                >
+                <span class="skill-item"
+                  ><i class="fab fa-node-js"></i> Express.js</span
+                >
+                <span class="skill-item"
+                  ><i class="fas fa-database"></i> MongoDB</span
+                >
+                <span class="skill-item">JWT</span>
+              </div>
+              <a
+                href="https://github.com/ChetanReddy1303/alumni-connect"
+                target="_blank"
+                class="project-link"
+                ><i class="fab fa-github"></i> View on GitHub</a
+              >
+            </div>
+            <div class="project-card">
+              <div class="project-image">Placeholder Image</div>
+              <h3>ZomatoClone</h3>
+              <p>
+                A restaurant search and listing platform built with Spring Boot
+                and Angular. Features pagination, search by
+                name/address/cuisine, and location-based search using latitude
+                and longitude.
+              </p>
+              <div class="project-tech">
+                <span class="skill-item"
+                  ><i class="fas fa-leaf"></i> Spring Boot</span
+                >
+                <span class="skill-item"
+                  ><i class="fab fa-angular"></i> Angular</span
+                >
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/ChetanReddy1303/Zomato--clone-Frontend-"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fab fa-github"></i> Frontend on GitHub</a
+                >
+                <a
+                  href="https://github.com/ChetanReddy1303/Zomato--clone"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fab fa-github"></i> Backend on GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">Placeholder Image</div>
+              <h3>Educate School Website</h3>
+              <p>
+                A school management website to manage student and staff data,
+                with CRUD operations, secure authentication, and role-based
+                access control. Uses MySQL for data storage and JSP for dynamic
+                content.
+              </p>
+              <div class="project-tech">
+                <span class="skill-item"
+                  ><i class="fas fa-database"></i> MySQL</span
+                >
+                <span class="skill-item">JSP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Contact">
+        <div class="contact-container">
+          <h2 class="header-primary">Get in Touch</h2>
+          <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="from_name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="from_email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <div id="form-message"></div>
+        </div>
+      </section>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+      <i class="fas fa-moon"></i>
+    </button>
+    <button id="scroll-to-top" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <script>
+      // Sidenav toggle functionality
+      const hamburger = document.getElementById('hamburger');
+      const sidenav = document.getElementById('sidenav');
+      const closeBtn = document.getElementById('close-btn');
+      const sidenavLinks = document.querySelectorAll('.sidenav-link');
+
+      hamburger.addEventListener('click', () => {
+          sidenav.classList.add('open');
+      });
+
+      closeBtn.addEventListener('click', () => {
+          sidenav.classList.remove('open');
+      });
+
+      // Close sidenav when a link is clicked
+      sidenavLinks.forEach(link => {
+          link.addEventListener('click', () => {
+              sidenav.classList.remove('open');
+          });
+      });
+
+      // Smooth scrolling for all nav links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+              if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+              }
+          });
+      });
+
+      // Typing animation for header
+      const typingText = document.querySelector('.header-primary.typing');
+      const textToType = typingText.textContent;
+      typingText.textContent = '';
+      let i = 0;
+
+      function typeWriter() {
+          if (i < textToType.length) {
+              typingText.textContent += textToType.charAt(i);
+              i++;
+              setTimeout(typeWriter, 100);
+          }
+      }
+
+      // Theme toggle functionality
+      const themeToggle = document.getElementById('theme-toggle');
+      const htmlElement = document.documentElement;
+
+      const savedTheme = localStorage.getItem('theme') || 'dark-mode';
+      htmlElement.classList.add(savedTheme);
+      updateThemeIcon(savedTheme);
+
+      themeToggle.addEventListener('click', () => {
+          const currentTheme = htmlElement.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+          const newTheme = currentTheme === 'dark-mode' ? 'light-mode' : 'dark-mode';
+          
+          htmlElement.classList.remove(currentTheme);
+          htmlElement.classList.add(newTheme);
+          
+          localStorage.setItem('theme', newTheme);
+          updateThemeIcon(newTheme);
+      });
+
+      function updateThemeIcon(theme) {
+          const icon = themeToggle.querySelector('i');
+          icon.classList.remove(theme === 'dark-mode' ? 'fa-sun' : 'fa-moon');
+          icon.classList.add(theme === 'dark-mode' ? 'fa-moon' : 'fa-sun');
+      }
+
+      // Handle form submission
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        sendMail(); // Ensure this matches the function name in email.js
+      });
+
+      // Animate sections on scroll
+      const sections = document.querySelectorAll('section');
+      const observerOptions = {
+          threshold: 0.1
+      };
+
+      const sectionObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('section-animate', 'visible');
+                  observer.unobserve(entry.target);
+              }
+          });
+      }, observerOptions);
+
+      sections.forEach(section => {
+          sectionObserver.observe(section);
+      });
+
+      // Scroll to top button
+      const scrollToTopBtn = document.getElementById('scroll-to-top');
+      window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+              scrollToTopBtn.classList.add('visible');
+          } else {
+              scrollToTopBtn.classList.remove('visible');
+          }
+      });
+
+      scrollToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Hide loader and start typing animation when page is fully loaded
+      window.addEventListener('load', () => {
+          const loader = document.getElementById('loader');
+          loader.style.opacity = '0';
+          setTimeout(() => {
+              loader.style.display = 'none';
+              typeWriter(); // Start typing animation after loader
+          }, 500);
+      });
+
+      // Fallback: Hide loader after 5 seconds if load event doesn't fire
+      setTimeout(() => {
+          const loader = document.getElementById('loader');
+          if (loader.style.display !== 'none') {
+              loader.style.opacity = '0';
+              setTimeout(() => {
+                  loader.style.display = 'none';
+                  typeWriter();
+              }, 500);
+          }
+      }, 5000);
+    </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBvHQVQ-eW6LptDXeCq-ul-qcVh13WhHlQ",
+        authDomain: "chetanreddy-portfolio.firebaseapp.com",
+        projectId: "chetanreddy-portfolio",
+        storageBucket: "chetanreddy-portfolio.firebasestorage.app",
+        messagingSenderId: "248292955312",
+        appId: "1:248292955312:web:5dfd461c8e232b39cb9775",
+        measurementId: "G-70V1JMP9ZS"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
